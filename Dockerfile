@@ -9,8 +9,8 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/franceking1/Flash-Md.git  /root/FlashMd
-WORKDIR /root/FlashMd/
+RUN git clone https://github.com/rodylie23/Rodylie23-Md.git  /root/rodylie23
+WORKDIR /root/rodylie23md/
 
 
 COPY package.json .
@@ -21,4 +21,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["node", "flash.js"]
+CMD ["node", "rodylie23.js"]
